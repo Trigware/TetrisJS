@@ -1,0 +1,14 @@
+.hidden {
+    display: none
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.biggerText {
+    font-size: 1.5em;
+    margin-top: -0.5em;
+}

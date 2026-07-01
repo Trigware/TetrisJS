@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Tetris</title>
+</head>
+<body>
+    <div class="centered">
+        <h1 id="header" style="font-size:2.5em">Tetris</h1>
+        <canvas id="game"></canvas>
+        <br>
+        <div>
+            <button id="startGameButton" onclick="ClickStartButton()" style="font-size: 1.5em;">Start Game</button>
+            <button id="pauseGameButton" onclick="ClickPauseButton()" style="font-size: 1.5em;" class="hidden">Pause Game</button>
+            <a href="controls.html">
+                <button style="font-size: 1.5em">Controls</button>
+            </a>
+        </div>
+        <br>
+        <select style="font-size:1.5em" id="difficultySelector">
+            <option value="600">Level 1</option>
+            <option value="450">Level 2</option>
+            <option value="300">Level 3</option>
+            <option value="175">Level 4</option>
+            <option value="100">Level 5</option>
+        </select>
+    </div>
+    <br>
+    <script src="upcomingPreview.js"></script>
+    <script src="tetromino.js"></script>
+    <script src="gamestate.js"></script>
+    <script src="gameloop.js"></script>
+</body>
+</html>
